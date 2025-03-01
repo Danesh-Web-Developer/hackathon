@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: "poppins";
+    padding: 0px;
+    margin: 0px;
+}
+
+.nav-link {
+    position: relative;
+    display: inline-block;
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    /* Thickness of the underline */
+    background-color: black;
+    /* Color of the underline */
+    transition: width 0.3s ease;
+    /* Speed of the animation */
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+
+.home {
+    color: #4C40F7 !important;
+}
+
+.btncontact {
+    background-color: #4C40F7;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+span {
+    color: #ff6800;
+}
+
+.btnget {
+    background-color: #4C40F7;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    transition: transform 0.4s ease-in-out;
+}
+
+.btnget:hover {
+    transform: scale(1.05);
+}
+
+.img1 {
+    width: 80%;
+    height: 70vh;
+}
+
+.headdiv {
+    line-height: 30px;
+    padding-top: 40px;
+}
+
+.box1:hover {
+    background-color: rgb(1, 127, 238);
+    color: white;
+}
+
+.backimg {
+    background-image: url(./images/WhatsApp\ Image\ 2024-09-29\ at\ 04.41.40_6e6d3fc7.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+}
+
+.video {
+    width: 90%;
+    height: 70%;
+    border-radius: 10px;
+}
+
+.ul {
+    line-height: 40px;
+}
+
+.carousel {
+    width: 600px !important;
+    margin: auto !important;
+}
+
+.para {
+    color: #ff0000;
+}
+
+.slide {
+    display: flex;
+    align-items: center;
+    color: white;
+    height: 70vh;
+}
+
+.boximg {
+    position: relative;
+    margin-bottom: 60px;
+}
+
+.boxtopimg {
+    width: 90px;
+    position: absolute;
+    top: -50px;
+    left: 130px;
+}
+
+.boxpara {
+    font-size: 10px;
+}
+
+.btnstart {
+    background-color: #4C40F7;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    transition: transform 0.4s ease-in-out;
+}
+.btnstart:hover {
+    transform: scale(1.05);
+}
+
+.input {
+    width: 300px;
+    border-radius: 5px;
+    border: none;
+    padding: 20px;
+}
+
+.subscribebox {
+    position: absolute;
+    top: -230px;
+    left: 0px;
+}
+
+.footpara {
+    color: white;
+    padding-top: 20px;
+}
+
+.footer {
+    margin-top: 220px;
+    background-color: #00113B;
+    padding-top: 100px;
+}
+
+.footcol {
+    width: 130px;
+}
+
+.footcontai {
+    position: relative;
+}
+
+.footcontainer {
+    border-top: 3px solid white;
+}
+
+
+
+
+@media screen and (min-width: 0px) {
+    .img1 {
+        height: 100%;
+    }
+}
+
+@media screen and (min-width: 400px) {
+    .img1 {
+        height: 100%;
+    }
+    .video{
+        height: 100px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .boxtopimg {
+        left: 43%;
+    }
+
+    .subscribebox {
+        top: -210px !important;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .boxtopimg {
+        left: 40%;
+    }
+
+    .input {
+        display: none !important;
+    }
+
+    .documentation {
+        height: 250px !important;
+    }
+
+    .textimg {
+        width: 80px;
+    }
+    .video{
+        height: 200px !important;
+    }
+}
