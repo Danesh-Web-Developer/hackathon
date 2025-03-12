@@ -66,7 +66,7 @@ span {
 
 .headdiv {
     line-height: 30px;
-    padding-top: 40px;
+    padding-top: 30px;
 }
 
 .box1:hover {
@@ -177,6 +177,9 @@ span {
 @media screen and (min-width: 0px) {
     .img1 {
         height: 100%;
+    }
+    .headdiv{
+        padding-top: 0px;
     }
 }
 
